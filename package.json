@@ -5,13 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind-watch": "pnpm tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "watch:tailwind": "pnpm tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "pretty": "pnpm exec prettier index.html --write"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.29.3",
-    "tailwindcss": "^3.3.3"
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.5.0"
   }
 }
